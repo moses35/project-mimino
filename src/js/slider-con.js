@@ -91,7 +91,7 @@ function swiperSlider() {
       //
 
       // let pagination = slider.querySelector('.swiper-pagination');
-      restSwiper = new Swiper(slider.querySelector('.swiper'), {
+      let restSwiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         //centeredSlides: true,
         autoplay: {
