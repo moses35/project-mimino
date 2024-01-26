@@ -139,23 +139,6 @@
   }
 }
 
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 20px;
-  margin-left: -15px;
-
-  @media screen and (min-width: 1024px) {
-    margin-bottom: 32px;
-    margin-left: 0;
-    width: fit-content;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-
 .swiper-wrapper-triple {
   flex-direction: row-reverse;
 }
@@ -166,34 +149,6 @@
   @media screen and (min-width: 1024px) {
     text-align: end;
     margin-bottom: 0;
-  }
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-
-  @media screen and (min-width: 1024px) {
-    display: inline-block;
-    width: fit-content;
-  }
-}
-
-.swiper-slide img {
-  @media screen and (min-width: 1024px) {
-    width: 194px;
-    height: 194px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 254px;
-    height: 254px;
   }
 }
 
@@ -298,5 +253,32 @@
 .about-hotel__delet-icon-mobile {
   @media (min-width: $tablet) {
     display: none;
+  }
+}
+
+.swiper_container {
+  display: flex;
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
+}
+
+.holel__slider {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-left: auto;
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop) {
   }
 }

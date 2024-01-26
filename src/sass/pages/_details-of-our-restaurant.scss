@@ -124,22 +124,22 @@
     justify-content: center;
     align-items: center;
     width: 236px;
-      height: 48px;
+    height: 48px;
     border: 2px solid $primary-hero-color;
-      border-radius: 25px;
-      background-color: $primary-header-color;
-      color: $accent-color;
-      font-family: 'Montserrat', Raleway;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.25;
-      letter-spacing: 0.02em;
-    
-      &:hover,
-      &:focus {
-        background-color: $primary-hero-color;
-        border: 2px solid $accent-color;
-      }
+    border-radius: 25px;
+    background-color: $primary-header-color;
+    color: $accent-color;
+    font-family: 'Montserrat', Raleway;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+      background-color: $primary-hero-color;
+      border: 2px solid $accent-color;
+    }
   }
 
   &__buttons {
@@ -149,19 +149,16 @@
     gap: 19px;
     @media screen and (min-width: $tablet) {
       justify-content: flex-end;
-      transform: translateX(67px);
     }
   }
   &__arrows {
     display: inline-flex;
-    transform: translateX(40px);
+    margin-top: 24px;
     max-width: 200px;
     margin-bottom: 40px;
     gap: 34px;
 
     @media screen and (min-width: $tablet) {
-      transform: translate(100px, 295px);
-
       max-height: 32px;
       margin-bottom: 0;
     }

@@ -34,10 +34,10 @@
         class="about-restaurant__photo-tablet"
       />
       <img
-        src="/src/images/desktop-image/desktop-photo-restaurant-3.jpg"
+        src="/src/images/desktop-image/desktop-slide-photo-hotel-7.jpg"
         srcset="
-          /src/images/desktop-image/desktop-photo-restaurant-3.jpg    1x,
-          /src/images/desktop-image/desktop-photo-restaurant-3@x2.jpg 2x
+          /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg    1x,
+          /src/images/desktop-image/desktop-slide-photo-hotel-7@x2.jpg 2x
         "
         alt="Інтер'єр ресторан"
         width="460"
@@ -84,77 +84,129 @@
       </p>
     </div>
 
-    <div class="about-restaurant__slider">
-      <img
-        src="/src/images/mobile-image/mobile-slide-photo-restaurant-3.jpg"
-        srcset="
-          /src/images/mobile-image/mobile-slide-photo-restaurant-3.jpg    1x,
-          /src/images/mobile-image/mobile-slide-photo-restaurant-3@x2.jpg 2x
-        "
-        alt="Вино"
-        width="245"
-        class="about-restaurant_square"
-      />
-      <img
-        src="/src/images/mobile-image/mobile-slide-photo-restaurant-4.jpg"
-        srcset="
-          /src/images/mobile-image/mobile-slide-photo-restaurant-4.jpg    1x,
-          /src/images/mobile-image/mobile-slide-photo-restaurant-4@x2.jpg 2x
-        "
-        alt="Сервірування столу"
-        width="245"
-        class="about-restaurant_square hidden about-restaurant__delet-icon-tablet"
-      />
-      <img
-        src="/src/images/mobile-image/mobile-slide-photo-restaurant-bul.jpg"
-        srcset="
-          /src/images/mobile-image/mobile-slide-photo-restaurant-bul.jpg    1x,
-          /src/images/mobile-image/mobile-slide-photo-restaurant-bul@x2.jpg 2x
-        "
-        alt="Сервірування столу"
-        width="245"
-        class="about-restaurant_square hidden about-restaurant__delet-icon-mobile"
-      />
-      <img
-        src="/src/images/desktop-image/desktop-slider-photo-restaurant-3.jpg"
-        srcset="
-          /src/images/desktop-image/desktop-slider-photo-restaurant-3.jpg    1x,
-          /src/images/desktop-image/desktop-slider-photo-restaurant-3@x2.jpg 2x
-        "
-        alt="Вино"
-        width="254"
-        class="about-restaurant_square-desktop"
-      />
-      <img
-        src="/src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg"
-        srcset="
-          /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg    1x,
-          /src/images/desktop-image/desktop-slider-photo-restaurant-4@x2.jpg 2x
-        "
-        alt="Сервірування столу"
-        width="254"
-        class="about-restaurant_square-desktop"
-      />
-    </div>
-    <div class="about-restaurant__arrows">
-      <button
-        type="button"
-        class="about-restaurant__button"
-        aria-labelledby="прогорнути лівопуч"
-      >
-        <svg width="32" height="32" class="about-restaurant__icon">
-          <use href="/src/images/sprite.svg#icon-cil_arrow-slide"></use>
-        </svg>
-      </button>
-      <button
-        type="button"
-        class="about-restaurant__button"
-        aria-labelledby="прогорнути праворуч"
-      >
-        <svg width="32" height="32" class="about-restaurant__icon">
-          <use href="/src/images/sprite.svg#icon-cil_arrow-right"></use>
-        </svg>
-      </button>
+    <div class="about-restaurant__slider" data-slider="data-slider">
+      <div class="about-restaurant-swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg 1x,
+                  /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg 1x,
+                  /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg 1x,
+                  /src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="about-restaurant_square-desktop"
+                src="/src/images/desktop-image/desktop-slider-photo-restaurant-4.jpg"
+                alt="Про комплекс"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-4.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-4.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-4.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-4.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-4.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-4.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="about-restaurant_square-desktop"
+                src="/src/images/desktop-image/desktop-slide-photo-hotel-4.jpg"
+                alt="Про комплекс"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-7.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                width="254"
+                class="about-restaurant_square-desktop"
+                src="/src/images/desktop-image/desktop-slide-photo-hotel-7.jpg"
+                alt="Про комплекс"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <div class="about-restaurant__arrows">
+          <button
+            type="button"
+            class="sw-button-prev about-restaurant__button"
+            aria-labelledby="прогорнути лівопуч"
+          >
+            <svg width="32" height="32" class="about-restaurant__icon">
+              <use href="/src/images/sprite.svg#icon-cil_arrow-slide"></use>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="sw-button-next about-restaurant__button"
+            aria-labelledby="прогорнути праворуч"
+          >
+            <svg width="32" height="32" class="about-restaurant__icon">
+              <use href="/src/images/sprite.svg#icon-cil_arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>

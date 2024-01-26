@@ -31,7 +31,7 @@
           />
           <img
             class="mHotel__img"
-            src="./images/desktop-image/desktop-photo-hotel-1@x2.jpg"
+            src="./images/desktop-image/desktop-slide-photo-hotel-11@x2.jpg"
             alt=""
           />
         </picture>
@@ -50,35 +50,120 @@
       />
     </div>
 
-    <div class="mHotel__screw">
-      <div class="mHotel__srewImg">
-        <img
-          class="mHotel__srewImg0"
-          src="/src/images/mobile-image/mobile-slide-photo-hotel-bul1.jpg"
-          alt=""
-        />
-
-        <img
-          class="mHotel__srewImg1"
-          src="/src/images/mobile-image/mobile-slide-photo-hotel-7.jpg"
-          alt=""
-        />
-        <img
-          class="mHotel__srewImg2"
-          src="/src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg"
-          alt=""
-        />
-      </div>
-      <button type="button" class="mHotel__button" aria-labelledby="прогорнути лівопуч">
+    <div class="mHotel__screw" data-slider="data-slider">
+      
+      <div class="mHotel__srewImg swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-9.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-9.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-9.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-9.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-9.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-9.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="about-restaurant_square-desktop"
+                src="/src/images/desktop-image/desktop-slide-photo-hotel-9.jpg"
+                alt="Про комплекс"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-11.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-11.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-11.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-11.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-11.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-11.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                class="about-restaurant_square-desktop"
+                src="/src/images/desktop-image/desktop-slide-photo-hotel-11.jpg"
+                alt="Про комплекс"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg 2x
+                "
+                media="(max-width: 1279px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  /src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg 1x,
+                  /src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg 2x
+                "
+                type="image/jpeg"
+              />
+              <img
+                width="254"
+                class="about-restaurant_square-desktop"
+                src="/src/images/desktop-image/desktop-slide-photo-hotel-8@x2.jpg"
+                alt="Про комплекс"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="mHotel_srewImg-arrows">
+      <button type="button" class="sw-button-prev about-restaurant__button" aria-labelledby="прогорнути лівопуч">
         <svg width="32" height="32">
-          <use href="/src/images/sprite.svg#icon-arrow-left-hero"></use>
+          <use href="/src/images/sprite.svg#icon-cil_arrow-slide"></use>
         </svg>
       </button>
-      <button type="button" class="mHotel__button" aria-labelledby="прогорнути праворуч">
+      <button type="button" class="sw-button-next about-restaurant__button" aria-labelledby="прогорнути праворуч">
         <svg width="32" height="32">
           <use href="/src/images/sprite.svg#icon-cil_arrow-right"></use>
         </svg>
       </button>
+      </div>
     </div>
   </div>
 </section>
